@@ -1,0 +1,197 @@
+@import "./purple-synth-colors.scss";
+//global-needed-features//
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+//progress-bar//
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100");
+body{
+  font-family: 'Press Start 2P';
+  background: #151515;
+  
+  
+}
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.percent{
+  color: white;
+  font-family: 'Press Start 2P';
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.progress-bar{
+  width: 406px;
+  height: 21px;
+  background: #111;
+  border-radius: 13px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+.progress{
+  width: 10px;
+  height: 15px;
+  background: #f60d54;
+  border-radius: 13px;
+}
+.text{
+  position: absolute;
+  left: 160px;
+  color: #fdb5ca;
+  font-size: 15px;
+  font-family: 'Press Start 2P';
+  letter-spacing: 1px;
+  line-height: 21px;
+  display: none;
+}
+.text-blink{
+  animation: animate .7s ease-in-out .1s;
+}
+@keyframes animate {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+//stylesheet//
+.purple-synth-h1{
+    margin:50px;
+    font-size: 80px;
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    background-image: linear-gradient(60deg, $synth-color-pink, $synth-color-orange);
+    text-align: center;
+    text-shadow:
+
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+}
+.purple-synth-h1 h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+  }
+
+  #synth-wave-header h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+
+  }
+  #synth-wave-header p{
+    -webkit-animation: pulsate 1.5s ease-in;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 1;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.1;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.1;
+    }
+}
+
+
+
+.purple-synth-img{
+    margin: 50px;
+    display:flex;
+    align-items: right;
+    justify-content: right;
+    position:relative;  
+    img{
+        height:10%;
+        width:20%;
+    }
+}
+
+body{
+    background-image:url('../img/purple-synth.gif');
+    background-size: cover;
+    filter: blur(0px);
+
+}
+
+#synth-wave-header .container .row .col-xl-4 {
+    font-family: 'Press Start 2P', cursive;
+    h1{
+        color:white;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 25px;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa;
+    }
+    p{
+        text-align: center;
+    }
+    color:white;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff;
+ 
+
+}
