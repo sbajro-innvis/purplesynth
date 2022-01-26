@@ -8,8 +8,6 @@
 
 //progress-bar//
 
-
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100");
 body{
   font-family: 'Press Start 2P';
   background: #151515;
@@ -29,6 +27,12 @@ body{
   font-weight: 400;
   text-align: center;
   margin-bottom: 15px;
+  text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 42px #8c1eff,
+            0 0 82px #8c1eff,
+            0 0 92px #8c1eff;
 }
 .progress-bar{
   width: 406px;
@@ -116,7 +120,7 @@ body{
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 1.5s steps(40, end),
+      typing 3.5s steps(40,end),
       blink-caret .75s step-end infinite;
   }
   
@@ -160,7 +164,10 @@ body{
     img{
         height:10%;
         width:20%;
+        
     }
+    
+    
 }
 
 body{
