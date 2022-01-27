@@ -7,7 +7,7 @@ function progress(){
     var loading = setInterval(animate, 50);
     function animate(){
       if(count == 100 && per == 400){
-        percent.classList.add("text-blink");
+        percent.classList.add("text-blink");0
         text.style.display = "block";
         clearInterval(loading);
       }else{
